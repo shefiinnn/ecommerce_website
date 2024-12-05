@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Air Force 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="jordan.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <ul class="nav nav-underline ">
+      <li class="logo">
+        <img src="—Pngtree—cartoon shoes element vector_5750279.png" alt="shoe" style="width: 70px;height: 60px;">
+        <p style="font-size: 25px;color: white;">
+      </li>
+      <li class="logoname"
+        style="color: red;margin: 10px;position: absolute;left: 60px;top:10PX;font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <b>SHOEZO</b>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="home.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">PRODUCTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cart.html">CART</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about us.html">ABOUT US</a>
+      </li>
+      <!-- <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li> -->
+    </ul>
+    <form class="d-flex" role="search" style="margin-bottom: 10px;">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    </nav>
+
+  </div>
+  <div class="container mt-5">
+    <!-- Sticky Carousel -->
+    <div class="carousel-container sticky-carousel" style="height: 430px;width: 430px;">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Carousel Item 1 -->
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="super/Superstar_Shoes_White_EG4958_01_standard.avif" class="d-block w-100" alt="Product Image 1">
+            
+          </div>
+          <!-- Carousel Item 2 -->
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="super/Superstar_Shoes_White_EG4958_02_standard_hover.avif" class="d-block w-100" alt="Product Image 2">
+            
+          </div>
+          <!-- Carousel Item 3 -->
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="super/Superstar_Shoes_White_EG4958_04_standard.avif" class="d-block w-100" alt="Product Image 3">
+            
+          </div>
+          <!-- Carousel Item 4 -->
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="super/Superstar_Shoes_White_EG4958_05_standard.avif" class="d-block w-100" alt="Product Image 4">
+            
+          </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="product" style="position: absolute;top: 300px;right:470px">
+    <h4 id="shoe-name"
+      style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-shadow: 2px 2px rgb(156, 147, 147);font-size: 35px;color: white;">
+      <b>Adidas SuperStar</b></h4>
+    <h6 style="color: white;">USD : 70 $ <br>
+      <h7 style="color: white;">Inclusive of all taxes <br>
+        (Also includes all applicable duties)</h7>
+  </div>
+  <div class="details-all">
+    <div class="container" style="position: absolute; left: -1px;top: -5px;">
+
+      <div class="size-selector-container">
+        <h3>Select Your Shoe Size</h3>
+        <div class="size-chart">
+          <button class="size-option" data-size="5">5</button>
+          <button class="size-option" data-size="6">6</button>
+          <button class="size-option" data-size="7">7</button>
+          <button class="size-option" data-size="8">8</button>
+          <button class="size-option" data-size="9">9</button>
+          <button class="size-option" data-size="10">10</button>
+          <button class="size-option" data-size="10">11</button>
+          <button class="size-option" data-size="10">12</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS for any necessary JS functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Keeping track of the selected size option
+      const buttons = document.querySelectorAll('.size-option');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          buttons.forEach(btn => btn.classList.remove('active-size'));
+          button.classList.add('active-size');
+        });
+      });
+    </script>
+    <div class="container" style="position: absolute;top: 180px;left: -1px;">
+      <!-- Product Cart -->
+      <div class="cart-container">
+        <h3>Select Quantity</h3>
+        <div class="quantity-selector">
+          <button class="quantity-btn" id="decrement-btn">
+            <center>-</center>
+          </button>
+          <span id="quantity-value">1</span>
+          <button class="quantity-btn" id="increment-btn">
+            <center>+</center>
+          </button>
+        </div>
+        <button class="add-to-cart-btn">Add To Cart </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Handle adding the product to the cart
+    document.querySelector('.add-to-cart-btn').addEventListener('click', () => {
+  const productName = document.getElementById('shoe-name').textContent;  // Get the product name
+  const productPrice = 70.00;  // Static price (you can make this dynamic if necessary)
+  const selectedSize = document.querySelector('.active-size') ? document.querySelector('.active-size').textContent : null;
+  const quantity = parseInt(document.getElementById('quantity-value').textContent); // Get the selected quantity
+
+  if (!selectedSize) {
+    alert("Please select a size");
+    return;
+  }
+
+  // Create an object representing the product to add to the cart
+  const product = {
+    name: productName,
+    price: productPrice,
+    size: selectedSize,
+    quantity: quantity,
+  };
+
+  // Get the current cart from localStorage
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Check if the item is already in the cart (same product and size)
+  const existingProductIndex = cart.findIndex(item => item.name === product.name && item.size === product.size);
+
+  if (existingProductIndex !== -1) {
+    // If the product is already in the cart, update its quantity
+    cart[existingProductIndex].quantity += quantity;
+  } else {
+    // Otherwise, add the new product to the cart
+    cart.push(product);
+  }
+
+  // Save the updated cart back to localStorage
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  // Optionally redirect to the cart page
+  window.location.href = 'cart.html'; // Redirect to cart page
+});
+
+// Quantity Counter Logic
+const decrementBtn = document.getElementById('decrement-btn');
+const incrementBtn = document.getElementById('increment-btn');
+const quantityValue = document.getElementById('quantity-value');
+
+let quantity = 1; // Initial quantity
+
+// Decrement button functionality
+decrementBtn.addEventListener('click', () => {
+  if (quantity > 1) {
+    quantity--;  // Decrease quantity
+    quantityValue.textContent = quantity; // Update displayed quantity
+  }
+});
+
+// Increment button functionality
+incrementBtn.addEventListener('click', () => {
+  quantity++; // Increase quantity
+  quantityValue.textContent = quantity; // Update displayed quantity
+});
+
+   
+
+
+</script>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

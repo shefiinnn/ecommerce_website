@@ -1,0 +1,233 @@
+.navbar{
+    background-color: black;
+    background-size: contain;
+    height: 80px;
+}
+.nav-item{
+    justify-content: center;
+    position: relative;
+    left: 300px;
+    margin-top: 10px;
+    padding-left: 50px;
+    
+}
+.nav-link{
+    color: white;
+}
+
+.sticky-carousel {
+    position: sticky;
+    top: 100px;
+    width: 420px; /* Slightly larger than before */
+    height: 420px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    border-radius: 15px; /* Rounded corners for a more polished look */
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Animation for hover */
+  }
+  
+  /* Hover effect to zoom carousel slightly */
+  .sticky-carousel:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  /* Styling the carousel container */
+  .carousel-container {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+  
+  /* Carousel Image Styling */
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px; /* Ensure images fit the rounded container */
+  }
+  
+  /* Carousel Controls */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  /* Control hover effect */
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #444;
+  }
+  
+  /* Custom button for previous and next */
+  button {
+    transition: background-color 0.2s ease;
+  }
+  .size-selector-container {
+    width: 250px; /* Small portion of the page */
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px auto; /* Center on the page */
+    text-align: center;
+  }
+  
+  /* Title Style */
+  .size-selector-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Size Chart Buttons */
+  .size-chart {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .size-option {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  /* Hover effect */
+  .size-option:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Active size selected */
+  .size-option.active-size {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+  }
+  
+
+  
+    .size-option {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+    .cart-container {
+        width: 250px; /* Small portion of the page */
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin: 15px auto; /* Center on the page */
+        text-align: center;
+        justify-content: center;
+      }
+      
+      /* Title Style */
+      .cart-container h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #333;
+      }
+      
+      /* Quantity Selector */
+      .quantity-selector {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      .quantity-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 60%;
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.1s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+      
+      .quantity-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+      }
+      
+      #quantity-value {
+        margin: 0 15px;
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+      }
+      
+      /* Add to Cart Button */
+      .add-to-cart-btn {
+        background-color: #28a745;
+        color: white;
+        padding: 11px 70px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.3s
+      }
+      .details-all{
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        left: 850px;
+        top: 100px;
+        border: 5px solid transparent;
+        border-radius: 25px;
+        background-clip: padding-box;
+        background-color: #fff;
+        margin: 50px auto;
+        max-width: 600px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+      
+        /* Gradient border */
+        background-image: linear-gradient(white, white),
+                          linear-gradient(45deg, #000000, #cac1ca);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+      }
+      .details-all:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px) scale(1.02); /* Slight lift and scale */
+        
+      }
+      body{
+        background-color: black;
+      }
+      
+
+
+
+  

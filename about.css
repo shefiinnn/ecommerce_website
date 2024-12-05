@@ -1,0 +1,75 @@
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.brand {
+    color: #ff5733;
+}
+
+.tagline {
+    font-style: italic;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.divider {
+    border: 1px solid #ff5733;
+    width: 50%;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #ff5733;
+    margin-top: 30px;
+}
+
+.mission, .story, .values {
+    text-align: left;
+    margin: 20px auto;
+}
+
+.values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values li {
+    padding: 5px 0;
+    font-size: 1.1em;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.icon {
+    font-size: 28px;
+    color: #333;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #ff5733;
+}
+.navbar{
+    background-color: black;
+    background-size: contain;
+    height: 80px;
+  
+}
+.nav-item{
+    justify-content: center;
+    position: relative;
+    left: 300px;
+    margin-top: 10px;
+    padding-left: 50px;
+    
+}
+.nav-link{
+    color: white;
+}

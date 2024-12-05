@@ -1,0 +1,149 @@
+/* Navbar Styles */
+.navbar {
+    background-color: black;
+    background-size: contain;
+    height: 80px;
+}
+
+.nav-item {
+    justify-content: center;
+    position: relative;
+    left: 300px;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+.nav-link {
+    color: white;
+}
+
+/* Cart Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.cart-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+.item-details img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.item-price p {
+    font-size: 18px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-summary {
+    margin-top: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.checkout {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout button {
+    background-color: #017bff;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.checkout button:hover {
+    background-color: #015fa3;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-remove {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-remove:hover {
+    background-color: darkred;
+}
+
+.item-count {
+    font-size: 18px;
+    padding: 0 10px;
+}
